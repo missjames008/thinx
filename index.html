@@ -45,8 +45,34 @@
     </div>
     <div class="sticky" id="order-section">
       <h1>$35.00</h1>
-      <div>color - black - beige</div>
-      <div>quantity counter +-</div>
+
+      <!-- custom color select -->
+
+    <div class="color" style="color: black; margin-left: 0px;">
+      <input type="radio" name="color" checked>
+      color
+      <i class="checkbox-icon"></i>
+    </div>
+    <div class="color" style="background-color: #000000; color: white">
+      <input type="radio" name="color" checked>
+      black
+      <i class="checkbox-icon"></i>
+    </div>
+
+    <div class="color" style="background-color: #fcf5c2">
+      <input type="radio" name="color">
+      beige
+      <i class="checkbox-icon"></i>
+    </div>
+
+
+      <!-- custom counter -->
+      <div class="quantity">
+        quantity &nbsp
+          <a href="#" class="quantity__minus"><span>-</span></a>
+          <input name="quantity" type="text" class="quantity__input" value="1">
+          <a href="#" class="quantity__plus"><span>+</span></a>
+      </div>
 
       <!-- custom drop-down -->
       <div class="drop-down">

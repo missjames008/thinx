@@ -189,3 +189,98 @@ h1 {
   color:#fff;
   transition:0.2s ease;
 }
+
+/* CSS for custom counter */
+.quantity {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.quantity__minus,
+.quantity__plus {
+  display: block;
+  width: 22px;
+  height: 23px;
+  margin: 0;
+  background: #dee0ee;
+  text-decoration: none;
+  text-align: center;
+  line-height: 23px;
+}
+.quantity__minus:hover,
+.quantity__plus:hover {
+  background: #575b71;
+  color: #fff;
+}
+.quantity__minus {
+  border-radius: 3px 0 0 3px;
+}
+.quantity__plus {
+  border-radius: 0 3px 3px 0;
+}
+.quantity__input {
+  width: 32px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 2px solid #dee0ee;
+  border-bottom: 2px solid #dee0ee;
+  border-left: 1px solid #dee0ee;
+  border-right: 2px solid #dee0ee;
+  background: #fff;
+  color: #8184a1;
+}
+.quantity__minus:link,
+.quantity__plus:link {
+  color: #8184a1;
+}
+.quantity__minus:visited,
+.quantity__plus:visited {
+  color: #fff;
+}
+
+/* CSS for custom color select */
+.color,
+.color input {
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+  height: 25px;
+}
+
+.color {
+  display: inline-block;
+  margin-left: -10px;
+  padding-left: 15px;
+  border: 1px solid black;
+}
+
+.color input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.color i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-right: 10px;
+  background-image: url(checkmark.jpg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  opacity: 0;
+  transition: .15s opacity ease-in-out;
+}
+
+.color input:checked + i {
+  opacity: 1;
+}
