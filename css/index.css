@@ -38,6 +38,24 @@ h1 {
    max-width: 40vw;
  }
 
+ button {
+   background-color: black;
+   color: white;
+   font-family: 'Graphik Medium', sans-serif;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   letter-spacing: .15em;
+   font-weight: 500;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   width: 25vw;
+ }
+
+ .link {
+   text-decoration: underline;
+ }
+
 .main {
   background-color: #f8f8f8;
   bottom: 0;
@@ -114,4 +132,60 @@ h1 {
     display: grid;
     grid-template-columns: auto;
   }
+}
+
+/* CSS for custom dropdown */
+.drop-down{
+  position:absolute;
+}
+
+.drop-down .selected a{
+  background:#fff no-repeat scroll right center;
+  display:block;
+  padding-right:20px;
+  border:1px solid #d7d7d7;
+  width:150px;
+  border-radius:2px;
+  text-decoration:none;
+  color: black;
+}
+
+.drop-down .selected a span{
+  cursor:pointer;
+  display:block;
+  padding:5px;
+}
+
+.drop-down .option{
+  position:relative;
+}
+
+.drop-down .options ul{
+  background:#fff none repeat scroll 0 0;
+  display:none;
+  list-style:none;
+  padding:0px 0px;
+  position:absolute;
+  left:0px;
+  top:32px;
+  width:auto;
+  min-width:170px;
+  border:1px solid #d7d7d7;
+}
+
+.drop-down .selected span.value, .drop-down .options span.value{
+  display: none;
+}
+
+.drop-down .options ul li a{
+  padding:5px;
+  display:block;
+  text-decoration:none;
+  color: black;
+}
+
+.drop-down .options ul li a:hover{
+  background: black;
+  color:#fff;
+  transition:0.2s ease;
 }
