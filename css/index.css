@@ -11,22 +11,14 @@ body {
   background-color: #fff;
 }
 
-#description-section, #order-section {
-  padding-top: 25vh;
-}
-
-.description {
-  padding-top: 25px;
-}
-
 h1 {
   font-weight: bold;
-  text-align: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  font-size: 40px;
+  font-size: 14px;
   margin: 0;
+  letter-spacing: .25em;
+  padding-bottom: 20px;
 }
+
  h2 {
    font-weight: bold;
    font-size: 14px;
@@ -35,48 +27,91 @@ h1 {
    letter-spacing: .1em;
  }
 
- h3 {
-   font-weight: bold;
-   font-size: 14px;
-   margin: 0;
-   letter-spacing: .25em;
- }
-
  p {
    font-size: 10px;
    letter-spacing: normal;
    font-weight: bold;
  }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+ img {
+   max-height: 100vh;
+   max-width: 40vw;
+ }
 
 .main {
-  padding: 50px;
   background-color: #f8f8f8;
   bottom: 0;
+  position: relative;
+  width: 100%;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-
+.sticky {
+  width: 25%;
 }
+
+.description {
+  padding-bottom: 20px;
+}
+
+#description-section {
+  padding-top: 35vh;
+  padding-bottom: 25vh;
+  padding-left: 5vw;
+  float: left;
+  position: fixed;
+  top: 0;
+}
+
+#order-section {
+  padding-top: 35vh;
+  padding-bottom: 25vh;
+  padding-right: 5vw;
+  right: 0;
+  position: fixed;
+  top: 0;
+}
+
+#main-images {
+  padding-left: 30%;
+  max-width: 200px;
+}
+
+.secondary {
+  padding: 50px;
+  background-color: white;
+  bottom: 0;
+  text-align: center;
+}
+
+.secondary-img {
+  max-height: 70vh;
+  max-width: 35vw;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.flex-item {
+  margin: 10px;
+  text-align: left;
+}
+
+#flex-single {
+  padding-left: 25%;
+}
+
 
 @media only screen and (max-width: 600px) {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
   }
-}
-
-img {
-  max-height: 100vh;
-  max-width: 40vw;
-}
-
-#main-images {
-  text-align: center;
 }

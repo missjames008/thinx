@@ -18,74 +18,81 @@
     <!-- Custom styles for this page -->
     <link href="css/index.css" rel="stylesheet">
 
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
 
   <body>
 
-    <!-- Navigation -->
-<div class="main">
-
   <!-- using grid -->
-  <div class="grid-container">
-    <div class="grid-item" id="description-section">
-      <h3>HI-WAIST</h3>
+  <div class="main">
+    <div class="sticky" id="description-section">
+      <h1>HI-WAIST</h1>
       <div class="description">Heavy days. Holds up to 2 tampon's worth.</div>
       <div class="description">The phrase "treat yo'self" reaches new belly-button brushing heights with the Hi-Waist, and it's here just in time for cuffing season.</div>
     </div>
-    <div class="grid-item" id="main-images">
+
+    <div class="scroll" id="main-images">
+      <img src="assets/top_section_imgs/highwaist_black_front_2.jpg"/>
       <img src="assets/top_section_imgs/highwaist_black_front.jpg"/>
       <img src="assets/top_section_imgs/highwaist_black_back.jpg"/>
       <img src="assets/top_section_imgs/highwaist_black_side.jpg"/>
-      <img src="assets/top_section_imgs/highwaist_black_front_2.jpg"/>
       <img src="assets/top_section_imgs/highwaist_black_front_3.jpg"/>
       <img src="assets/top_section_imgs/highwaist_black_front_4.jpg"/>
 
 
     </div>
-    <div class="grid-item" id="order-section">
-      <h3>$35.00</h3>
+    <div class="sticky" id="order-section">
+      <h1>$35.00</h1>
       <div>color - black - beige</div>
       <div>quantity counter +-</div>
       <div>size drop-down</div>
       <div>what's my size small link</div>
       <div>add to cart button</div>
-      <div>build a cycle set link reg font size</div>
+      <div>build a cycle set link</div>
     </div>
 
   </div>
-  <div class="grid-container">
-    <div class="grid-item">
-      <img src="assets/bottom_section_imgs/hiphugger.jpg"/>
+
+  <div class="secondary">
+  <div class="flex-container">
+    <div class="flex-item">
+      <img class="secondary-img" src="assets/bottom_section_imgs/hiphugger.jpg"/>
       <h2>Shop Hiphugger</h2>
       <p>heavy days</p>
     </div>
-    <div class="grid-item">
-      <img src="assets/bottom_section_imgs/cheeky.jpg"/>
+    <div class="flex-item">
+      <img class="secondary-img" src="assets/bottom_section_imgs/cheeky.jpg"/>
       <h2>Shop Cheeky</h2>
       <p>light days</p>
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-item">
-      <img src="assets/bottom_section_imgs/thong.jpg"/>
+
+  <div class="flex-container">
+    <div class="flex-item" id="flex-single">
+      <img class="secondary-img" src="assets/bottom_section_imgs/thong.jpg"/>
       <h2>Shop Thong</h2>
       <p>lightest days</p>
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-item">
-      <img src="assets/bottom_section_imgs/sport.jpg"/>
+
+  <div class="flex-container">
+    <div class="flex-item">
+      <img class="secondary-img" src="assets/bottom_section_imgs/sport.jpg"/>
       <h2>Shop Sport</h2>
       <p>medium days</p>
     </div>
-    <div class="grid-item">
-      <img src="assets/bottom_section_imgs/boyshort.jpg"/>
+    <div class="flex-item">
+      <img class="secondary-img" src="assets/bottom_section_imgs/boyshort.jpg"/>
       <h2>Shop Boyshort</h2>
       <p>light days</p>
     </div>
   </div>
 
 </div>
+
+
 
     <!-- Custom JavaScript -->
     <script src="js/index.js"></script>
