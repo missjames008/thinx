@@ -35,7 +35,6 @@ h1 {
 
  img {
    max-height: 100vh;
-   max-width: 40vw;
  }
 
  button {
@@ -101,11 +100,6 @@ h1 {
   text-align: center;
 }
 
-.secondary-img {
-  max-height: 70vh;
-  max-width: 35vw;
-}
-
 
 .flex-container {
   display: flex;
@@ -120,10 +114,6 @@ h1 {
 .flex-item {
   margin: 10px;
   text-align: left;
-}
-
-#flex-single {
-  padding-left: 25%;
 }
 
 
@@ -291,7 +281,8 @@ h1 {
 #zoom-img-3,
 #zoom-img-4,
 #zoom-img-5,
-#zoom-img-6 {
+#zoom-img-6,
+#zoom-img-7 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -302,7 +293,8 @@ h1 {
 #zoom-img-3:hover,
 #zoom-img-4:hover,
 #zoom-img-5:hover,
-#zoom-img-6:hover {opacity: 0.7;}
+#zoom-img-6:hover,
+#zoom-img-7:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -365,9 +357,77 @@ h1 {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 900px){
+  #mobile-image {
+    display: none;
+  }
+  .secondary-img {
+    max-height: 70vh;
+    max-width: 35vw;
+  }
+
+  #flex-single {
+    padding-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .flex-item {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
+@media only screen and (max-width: 900px){
+  .main {
+    background-color: #f8f8f8;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .mobile-image-size {
+    height: 80vh;
+    max-width: 100%;
+  }
+
+  #mobile-image {
+    text-align: center;
+  }
+
+  .sticky {
+    width: 70%;
+  }
+
+  .description {
+    padding-bottom: 20px;
+  }
+
+  #description-section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 20vw;
+    position: relative;
+  }
+
+  #order-section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 20vw;
+    position: relative;
+  }
+
+  #main-images {
+    display: none;
+  }
+
+  .modal-content {
         width: 100%;
     }
+
+  .secondary-img {
+    width: 100%;
+  }
+
 }

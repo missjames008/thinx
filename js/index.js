@@ -84,7 +84,7 @@ img.onclick = function(){
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[1];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -99,7 +99,7 @@ img2.onclick = function(){
     modal2.style.display = "block";
     modalImg2.src = this.src;
 }
-var span2 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
 span2.onclick = function() {
     modal2.style.display = "none";
 }
@@ -112,7 +112,7 @@ img3.onclick = function(){
     modal3.style.display = "block";
     modalImg3.src = this.src;
 }
-var span3 = document.getElementsByClassName("close")[2];
+var span3 = document.getElementsByClassName("close")[3];
 span3.onclick = function() {
     modal3.style.display = "none";
 }
@@ -125,7 +125,7 @@ img4.onclick = function(){
     modal4.style.display = "block";
     modalImg4.src = this.src;
 }
-var span4 = document.getElementsByClassName("close")[3];
+var span4 = document.getElementsByClassName("close")[4];
 span4.onclick = function() {
     modal4.style.display = "none";
 }
@@ -138,7 +138,7 @@ img5.onclick = function(){
     modal5.style.display = "block";
     modalImg5.src = this.src;
 }
-var span5 = document.getElementsByClassName("close")[4];
+var span5 = document.getElementsByClassName("close")[5];
 span5.onclick = function() {
     modal5.style.display = "none";
 }
@@ -151,7 +151,20 @@ img6.onclick = function(){
     modal6.style.display = "block";
     modalImg6.src = this.src;
 }
-var span6 = document.getElementsByClassName("close")[5];
+var span6 = document.getElementsByClassName("close")[6];
 span6.onclick = function() {
     modal6.style.display = "none";
+}
+
+//MOBILE IMG Modal
+var modal7 = document.getElementById('zoom-modal-7');
+var img7 = document.getElementById('zoom-img-7');
+var modalImg7 = document.getElementById("img07");
+img7.onclick = function(){
+    modal7.style.display = "block";
+    modalImg7.src = this.src;
+}
+var span7 = document.getElementsByClassName("close")[0];
+span7.onclick = function() {
+    modal7.style.display = "none";
 }
