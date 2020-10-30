@@ -116,51 +116,42 @@ h1 {
   text-align: left;
 }
 
-
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-  }
-}
-
 /* CSS for custom dropdown */
 .drop-down{
-  position:absolute;
+  position: absolute;
 }
 
 .drop-down .selected a{
-  background:#fff no-repeat scroll right center;
-  display:block;
-  padding-right:20px;
-  border:1px solid #d7d7d7;
-  width:150px;
-  border-radius:2px;
-  text-decoration:none;
+  background: #fff no-repeat scroll right center;
+  display: block;
+  padding-right: 20px;
+  border: 1px solid #d7d7d7;
+  width: 150px;
+  border-radius: 2px;
   color: black;
 }
 
 .drop-down .selected a span{
-  cursor:pointer;
-  display:block;
-  padding:5px;
+  cursor: pointer;
+  display: block;
+  padding: 5px;
 }
 
 .drop-down .option{
-  position:relative;
+  position: relative;
 }
 
 .drop-down .options ul{
-  background:#fff none repeat scroll 0 0;
-  display:none;
-  list-style:none;
-  padding:0px 0px;
-  position:absolute;
-  left:0px;
-  top:32px;
-  width:auto;
-  min-width:170px;
-  border:1px solid #d7d7d7;
+  background: #fff none repeat scroll 0 0;
+  display: none;
+  list-style: none;
+  padding: 0px 0px;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  width: auto;
+  min-width: 170px;
+  border: 1px solid #d7d7d7;
 }
 
 .drop-down .selected span.value, .drop-down .options span.value{
@@ -168,16 +159,15 @@ h1 {
 }
 
 .drop-down .options ul li a{
-  padding:5px;
-  display:block;
-  text-decoration:none;
+  padding: 5px;
+  display: block;
   color: black;
 }
 
 .drop-down .options ul li a:hover{
   background: black;
-  color:#fff;
-  transition:0.2s ease;
+  color: #fff;
+  transition: 0.2s ease;
 }
 
 /* CSS for custom counter */
@@ -193,7 +183,6 @@ h1 {
   height: 23px;
   margin: 0;
   background: #dee0ee;
-  text-decoration: none;
   text-align: center;
   line-height: 23px;
 }
@@ -266,7 +255,6 @@ h1 {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: right center;
-
   opacity: 0;
   transition: .15s opacity ease-in-out;
 }
@@ -298,19 +286,17 @@ h1 {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 10
-
-    px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
 
 /* Modal Content (Image) */
@@ -357,6 +343,7 @@ h1 {
     cursor: pointer;
 }
 
+/* media query for desktop */
 @media only screen and (min-width: 900px){
   #mobile-image {
     display: none;
@@ -371,6 +358,7 @@ h1 {
   }
 }
 
+/* media query for tablet */
 @media only screen and (min-width: 700px) and (max-width: 900px) {
   .flex-item {
     margin-left: 10vw;
@@ -379,7 +367,7 @@ h1 {
 }
 
 
-/* 100% Image Width on Smaller Screens */
+/* media query for mobile */
 @media only screen and (max-width: 900px){
   .main {
     background-color: #f8f8f8;
@@ -387,10 +375,18 @@ h1 {
     width: 100%;
   }
 
+  #main-images {
+    display: none;
+  }
+
   .mobile-image-size {
     height: 80vh;
     max-width: 100%;
   }
+
+  .modal-content {
+        width: 100%;
+    }
 
   #mobile-image {
     text-align: center;
@@ -417,14 +413,6 @@ h1 {
     padding-left: 20vw;
     position: relative;
   }
-
-  #main-images {
-    display: none;
-  }
-
-  .modal-content {
-        width: 100%;
-    }
 
   .secondary-img {
     width: 100%;

@@ -39,13 +39,13 @@ $(".drop-down .options ul li a").click(function() {
     $(".drop-down .options ul").hide();
 });
 
-
 //hide options if clicked anywhere on page
 $(document).bind('click', function(e) {
     var $clicked = $(e.target);
     if (! $clicked.parents().hasClass("drop-down"))
         $(".drop-down .options ul").hide();
 });
+
 
 //CODE FOR CUSTOM COUNTER
 $(document).ready(function() {
@@ -69,7 +69,7 @@ $(document).ready(function() {
   })
 });
 
-//CODE FOR IMAGE ZOOMS
+//CODE FOR IMAGE ZOOM MODALS-- in real-world application I would simplify these separate modal functions into one reusable function that takes modal/img variables
 
 //FIRST IMAGE MODAL
 // Get the modal
